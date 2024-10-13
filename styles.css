@@ -1,0 +1,40 @@
+:root{
+    --branco-principal: #ffffff;                   /* as variareis */
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+*{
+    margin: 0;                                        /*definindo a altura e largura de toda a tela */
+    padding: 0;
+}
+.principal{
+    background-image: url(img/Background.png);        /*colar a img de fundo */
+    background-repeat: no-repeat;                     /*para nao repitir a imagem */
+    background-size: contain;                         /*pega todo conteiner no nosso caso a section*/
+}
+
+.conteiner{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+.conteiner__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
