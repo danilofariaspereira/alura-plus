@@ -4,6 +4,7 @@
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
     --fonte-principal:"Inter";                       /* utilizaçao da fonte */
+    --botao-azul-efeito: #051c38;
 }
 
 body {
@@ -47,6 +48,11 @@ body {
     border: 2px solid var(--branco-principal);
 }
 
+.conteiner__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cinza-secundario);
+}
+
 .conteiner__aviso {
     font-size: 12px;
     color: var(--cinza-secundario);
@@ -85,7 +91,7 @@ body {
     color: var(--cinza-secundario);
 }
 
-.secundario__botao{
+.secundario__botao {
     display: inline-block;
     margin-top: 1em;
 }
@@ -94,23 +100,56 @@ body {
     padding: 2em;
 }
 
-.dispositivos__lista{
+.dispositivos__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;                              /* utilizado para titar  os . que ficam visiveis  ao lado de uma ecrita ou img*/
     margin: 5em 0;
 }
 
-.dispositivos{
+.dispositivos {
     text-align: center;
 }
 
-.dispositivos__titulo{
+.dispositivos__titulo {
     font-size: 48px;
     color: var(--branco-principal);
 }
 
-.lista__item{
+.lista__item {
     font-size: 32px;
     color: var(--branco-principal);
 }
+
+.rodape {
+    text-align: center;
+    color: var(--branco-principal);
+    text-align: center;
+    margin: 5em 3em;
+}
+.roodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;                              /* utilizado para titar  os . que ficam visiveis  ao lado de uma ecrita ou img*/
+    margin: 2em;
+}
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 2em ;
+}
+
+.rodape__texto {
+    margin: 2em 2em;
+    color: var(--cinza-secundario);
+    font-size: 15px;
+}
+
+.lista__link a:hover {
+    color: red;
+}
+
+.lista__link a:active {                                /* essa funçao e pra quando estiver clicando no botao ela auere a cor nao e somente passar o mause e quando clicar */
+    color: #167bf7;
+}
+
